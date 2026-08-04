@@ -830,7 +830,7 @@ function clueSolved(){
     } else {
       // Kaikki 3 löydetty: peli läpäisty
       const win = game.win || {};
-      if (win.video){ showClip(win.video, true); }
+      if (win.video){ showClip(win.video, false); }
       document.getElementById('successMsg').innerHTML = win.title || 'PELI LÄPÄISTY!<br>LÖYSIT KAIKKI VIHJEET!';
       document.getElementById('successWrap').classList.remove('hidden');
       document.getElementById('newGameBtn').classList.remove('hidden');
