@@ -903,7 +903,7 @@ introEl.addEventListener('click', () => {
   audioUnlocked = true;
   initAudio(); SFX.click();
   const bgm = document.getElementById('bgm');
-  if (bgm){ bgm.volume = 0; }
+  if (bgm){ bgm.volume = 0.5 }
   bgmOn = true; updateBgm();
   introEl.classList.add('gone');
   buildAtmos();
